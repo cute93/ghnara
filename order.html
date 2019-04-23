@@ -1,0 +1,79 @@
+<?
+	include("./intro.html");
+?>
+<script lang="javascript">
+<!--
+function check() {
+  if(fr.ftitle.value == "") {
+    alert("상호명 값을 입력해 주세요.");
+    fr.ftitle.focus();
+    return false;
+  }
+  if(fr.fmaster.value == "") {
+    alert("업주분의 성함을 입력해 주세요.");
+    fr.fmaster.focus();
+    return false;
+  }
+  if(fr.ftel.value == "") {
+    alert("업주분의 휴대폰번호를 입력해 주세요.");
+    fr.ftel.focus();
+    return false;
+  }
+  if(fr.faddress.value == "") {
+    alert("상가의 주소를 입력해 주세요.");
+    fr.faddress.focus();
+    return false;
+  }
+  if(fr.fmenu1.value == "") {
+    alert("대표메뉴를 입력해 주세요.");
+    fr.fmenu1.focus();
+    return false;
+  }
+  var telreg  = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
+  if(!telreg.test(fr.ftel.value)){
+	  alert(fr.ftel.value+"는(은) 잘못된 휴대폰 번호입니다.");
+	  fr.ftel.value="";
+	  fr.ftel.focus();
+	  return false;
+	 }
+  return true;
+}
+//-->
+</script>
+<div class="content">
+<h1>화천지역 음식점 예약앱 신청 (GHNara Dev.)</h1>
+
+<form method="post" action="order.php" name="fr" onsubmit="return check()">
+
+<table width="80%">
+<tr>
+<td align="right">상호명 : </td><td><input type="text" name="ftitle">
+</tr>
+<tr>
+<td align="right">업주명 : </td><td><input type="text" name="fmaster">
+</tr>
+<tr>
+<td align="right">전화번호 : </td><td><input type="text" name="ftel">
+</tr>
+<tr>
+<td align="right">주 소 : </td><td><input type="text" name="faddress">
+</tr>
+<tr>
+<td align="right">대표메뉴1 : </td><td><input type="text" name="fmenu1">
+</tr>
+<tr>
+<td align="right">대표메뉴2 : </td><td><input type="text" name="fmenu2">
+<tr>
+<td colspan="2" align="center">*앱만들기를 신청해 주시면, 업소로 방문하여 견적드리겠습니다..</td>
+</tr>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="신청하기"> <input type="reset" value="취   소"></td>
+</tr>
+<table>
+</form>
+</div>
+
+<?
+	include("./footer.html");
+?>

@@ -1,0 +1,22 @@
+@font-face { font-family: 'SangSangAnt'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff'); font-weight: normal; font-style: normal; } 
+body{
+	background:#E4F7BA;
+	font-family: SangSangAnt, Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	border: solid 1pt #113F00;
+	padding : 15pt;
+	margin: 20pt;
+}
+h1{
+
+	background-image:url("img/back001.jpg");
+	border: solid 1pt #E4F7BA;
+	border-bottom-color: #113F00;
+	border-right-color: #113F00;
+	text-align:center;
+}
+input{
+	background:#CEF279;
+	font-family: SangSangAnt, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}

@@ -1,0 +1,95 @@
+@font-face { font-family: 'SangSangAnt'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+body{
+	background:#E4F7BA;
+	font-family: SangSangAnt, Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	border: solid 1pt #113F00;
+	padding : 15pt;
+
+	margin: 70pt 20pt 60pt 20pt;
+}
+h1{
+	background: #9FC93C;
+	border: solid 1pt #E4F7BA;
+	border-left : solid 10pt #0B3B0B;
+	border-bottom-color: #113F00;
+	border-right-color: #113F00;
+	text-align:center;
+	padding: 5px;
+}
+input{
+	background:#CEF279;
+	font-family: SangSangAnt, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+header{
+	background: #9FC93C;
+	border: solid 1pt #E4F7BA;
+	border-left : solid 10pt #0B3B0B;
+	border-bottom-color: #113F00;
+	border-right-color: #113F00;
+	text-align:left;
+	padding: 5px;
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	text-align: middle;
+}
+footer{
+	background: #9FC93C;
+	border: solid 1pt #E4F7BA;
+	border-right : solid 50pt #0B3B0B;
+	border-bottom-color: #113F00;
+	border-right-color: #113F00;
+	text-align:right;
+	padding: 5px;
+	width:95%;
+	position: fixed;
+	bottom:0;
+	left:0;
+}
+img.logo{
+	margin-left:10px;
+	margin-bottom : 0px;
+	}
+
+a:link.menu, a:visited.menu {
+  margin-left:10px;
+  color: white;
+  padding: 5px 25px 4px 25px;
+  text-align: center; 
+  text-decoration: none;
+  border:1px solid #0B3B0B;
+  background-color: #0B3B0B;
+}
+
+a:hover.menu, a:active.menu {
+padding: 14px 25px 4px 25px;
+background-color: #088A29;
+} 
+
+a:link, a:visited {
+  font-size:1.5em;
+  color: green;
+  padding: 1px 0px 0px 0px;
+  text-align: center; 
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  font-size:1.6em;
+  color: red;
+} 
+
+
+div{
+	text-align: center;
+	font-size: 3.5em;
+	font-family: S-CoreDream-8Heavy, Arial, Helvetica, sans-serif;
+}
+div.bold{
+	color: orange;
+}

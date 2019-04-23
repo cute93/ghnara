@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>연습</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="shop2.css" type="text/css">
+</head>
+<body>
+<div class="logo">
+<a class="plane" href="URL" onclick="window.open('logo.html', '_blank', 'width=500,height=660,toolbars=no,scrollbars=no'); return false;">
+<img class="logo" src="img/logo.jpg" alt="GHNara Logo" height="80"></a>
+<div class="title">GH NARA Development Inc.</div>
+</div>
+<div class="menu">
+<a class="menu" href="./">HOME</a>
+<a class="menu" href="./order.html">앱신청하기</a>
+<a class="menu" href="./project.html">앱확인하기</a>
+<a class="menu" href="./introduce.html">회사소개</a>
+<a class="menu" href="./manage/">관리자모드</a>
+</div>

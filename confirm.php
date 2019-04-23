@@ -1,0 +1,56 @@
+<?
+	include("./intro.html");
+?>
+<div class="content">
+<h1>예약앱 신청 상태확인</h1>
+<?
+	$fmaster = $_POST["fmaster"];
+    $ftel = $_POST["ftel"];
+	$qry = "select * from ghnara where mastername='$fmaster' and mastertel='$ftel'";
+
+	include("dbconn.php");
+	$result = mysqli_query($dbconn, $qry);
+	$rows = mysqli_num_rows($result);
+	if($rows!=0){
+		$row = mysqli_fetch_row($result);
+?>
+	<?=$row[1]?>의 신청은 정상적으로 이루어졌습니다.<br>
+	<?=$row[2]?>님의 전화번호(<?=$row[3]?>)으로 연락드리겠습니다.<br><br>
+	
+<?
+		if($row[7]==0){
+			echo "현재상태는[<font color='red'>접수미확인</font>]상태입니다.. 2~3일 내로 연락드리겠습니다.";
+		}
+        if($row[7]==1){
+			echo "현재상태는[<font color='red'>신청접수</font>]상태입니다..1~2시간 내로 연락드리고 방문 견적 드리겠습니다.";
+		}
+        if($row[7]==2){
+			echo "현재상태는[<font color='red'>방문견적확인</font>]상태입니다.";
+		}
+        if($row[7]==3){
+			echo "현재상태는[<font color='red'>앱제작중</font>]상태입니다.";
+		}
+		if($row[7]==4){
+			echo "현재상태는[<font color='red'>완료_AS진행 2개월</font>]상태입니다.";
+		}
+		if($row[7]==5){
+			echo "현재상태는[<font color='red'>프로젝트완료_AS요청시 추가요금발생</font>]상태입니다.";
+		}
+        
+        
+        
+        
+?>
+<br><br>
+	<a href="./">HOME</a>
+
+<?
+	}else{
+		echo "<script>alert('해당 샵의 정보가 없습니다. 성함과 전화번호를 확인하세요...');history.back();</script>";
+	}
+	include("resultclose.php");
+?>
+</div>
+<?
+	include("./footer.html");
+?>

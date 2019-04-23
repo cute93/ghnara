@@ -1,0 +1,12 @@
+
+CREATE TABLE IF NOT EXISTS `ghnara` (
+  `shopid` int(11) NOT NULL AUTO_INCREMENT,
+  `shopname` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `mastername` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `mastertel` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `shopaddress` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `menu1` varchar(16) CHARACTER SET utf8 NOT NULL,
+  `menu2` varchar(16) CHARACTER SET utf8 NOT NULL,
+  `progress` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`shopid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
