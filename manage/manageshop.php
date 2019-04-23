@@ -1,0 +1,73 @@
+<?
+	include("./intro.html");
+	if(!isset($_COOKIE["cid"]) || !isset($_COOKIE["cname"]) || !isset($_COOKIE["clevel"])){
+?>
+	<script>alert('접근이 불허되었습니다..');</script>
+	<meta http-equiv="refresh" content="0;url='index.php'">
+<?
+	}else{
+	$cookieid = $_COOKIE["cid"];
+	$cookiename = $_COOKIE["cname"];
+	$cookielevel = $_COOKIE["clevel"];
+
+	$getid = $_GET["fid"];
+?>
+<div class="content">
+<div class="logout"><a href="logout.php">Logout</a></div>
+	<?=$cookiename?>님 로그인 되었습니다..<br>
+<?
+	
+	$qry = "select * from ghnara where shopid='$getid'";
+
+	include("dbconn.php");
+	$result = mysqli_query($dbconn, $qry);
+	$row = mysqli_fetch_row($result);
+	echo("<h1>$row[1] 의 정보</h1>");
+	echo ("상호명 : $row[1] <br>");
+	echo ("사장님성함 : $row[2] <br>");
+	echo ("사장님전화 : $row[3] <br>");
+	echo ("주소(위치) : $row[4] <br>");
+	echo ("주메뉴 : $row[5] <br>");
+	echo ("서브메뉴 : $row[6] <br>");
+	echo ("현재상태 : [<font color='red'>");
+	switch($row[7]){
+	case 0:
+		echo '접수';
+		break;
+    case 1:
+		echo '담당자배정';
+		break;
+    case 2:
+		echo '면담진행(견적협의중)';
+		break;
+    case 3:
+		echo '앱제작중';
+		break;
+    case 4:
+		echo '완료(AS상태)';
+		break;
+    case 5:
+		echo '완료(AS종료)';
+		break;
+	}
+	echo ("</font>]<br>");
+	
+?>
+<form method="POST" action="changeshop.php">
+<input type="hidden" name="fid" value="<?=$getid?>">
+<select name="fstatus">
+<option value="0">초기화
+<option value="1" selected>담당자배정
+<option value="2">면담진행(견적협의)
+<option value="3">앱제작중
+<option value="4">완료(AS진행중)
+<option value="5">완료(AS종료)
+</select>
+<input type="submit" value="승인">
+<br><br>
+
+<?
+	}
+	echo("</div>");
+	include("./footer.html");
+?>

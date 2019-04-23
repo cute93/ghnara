@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head><title>css연습</title>
+<style type="text/css">
+body{
+	background : #d2b48c;
+	margin-left : 130px;
+	margin-right : 130px;
+	margin-top : 80px;
+	border : 2px solid black;
+	padding : 10px;
+	font : 20px;
+	font-family : sans-serif;
+}
+h3{
+	background:#000000;
+	color:#BBBBBB;
+}
+</style>
+</head>
+<body>
+<h1>인터넷정보과</h1>
+
+<h3>교육목표</h3>
+<p><ul><b>컴퓨터 프로그래밍 언어 교육을 통한 컴퓨팅 사고력을 갖춘 소프트웨어 개발인재 육성</b>
+<li>네트워크, 시스템 프로그래밍 및 게임 분야 프로그래밍 교육
+<li>현장 중심의 실무교육 실시를 통한 전문 SW개발 능력 배양
+</ul>
+</p>
+
+<h3>교육과정소개</h3>
+<p>
+<ul><b>15개의 보통교과와 7개의 NCS정보통신 계열 필수 전공교과로 편성.운영</b>
+<li>NCS전공교과
+<li>자료구조
+<li>프로그래밍
+<li>프로그래밍 실무
+<li>컴퓨터 그래픽
+<li>회계정보처리시스템
+<li>사무행정
+<li>스마트문화 앱 콘텐츠 제작
+</ul>
+</p>
+<h3>사회진출분야</h3>
+<p>
+<ul>
+<li>게임개발 분야
+<li>시스템 소프트웨어 개발 분야
+<li>컴퓨터그래픽 분야
+<li>테이터베이스 관리 분야
+<li>서버 관리 분야
+<li>공기업 및 대기업
+</ul>
+</p>
+<h3>취득자격증</h3>
+<p>
+<ul><b>상공회의소</b><li>워드프로세서<li>컴퓨터활용능력<li>전산회계운용사</ul>
+<ul><b>한국산업인력관리공단</b><li>정보처리기능사<li>정보기기운용기능사<li>컴퓨터그래픽운용기능사<li>웹디자인기능사</ul>
+<ul><b>한국생산성본부</b><li>ERP정보관리사 회계, 인사, 생산, 물류</ul>
+<ul><b>민간기관</b><li>인터넷정보관리사<li>ITQ<li>전자상거래관리사<li>PC정비사<li>리눅스마스타<li>디지털정보활용능력</ul>
+</p>
+</body>
+</html>
+
+
